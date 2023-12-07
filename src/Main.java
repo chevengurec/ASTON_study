@@ -27,7 +27,7 @@ public class Main {
 
         long count1 = list.stream().filter(str -> str.equals("High")).count();
         String first = list.stream().findFirst().orElse("0");
-        String last = list.stream().reduce((a, b) -> b).orElse("null");
+        String last = list.stream().reduce((a, b) -> b).orElse("0");
         long count2 = list.stream().filter(str->str.contains("High")).count();
 
         System.out.println("Слово High встречается " + count1 + " раз");
